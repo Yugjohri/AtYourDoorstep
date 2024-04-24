@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+body{
+  overflow: hidden;
+}
+
+.showPage navbar h1{
+  padding-top: 25px;
+  color: white;
+  font-family: 'Radio Canada', sans-serif;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 3.8rem;
+}
+
+.showPage hero{
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 250px;
+}
+
+.showPage a {
+  color: #fff;
+  font-size: 6rem;
+  text-decoration: none;
+  font-family: 'Radio Canada', sans-serif;
+  color: white;
+  margin-bottom: 40px;
+  border: 5px solid white;
+  border-radius: 80px;
+  padding: 10px 40px 10px 40px;
+}
+
+.showPage a:hover {
+  background-color: white;
+  color: black;
+}
+
+.showPage p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Radio Canada', sans-serif;
+}
+
+.showPage video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  width: 100vw;
+  left: calc(-50vw + 50%);
+  max-height: 670px;
+}
+
+#rules{
+  text-align: left;
+  margin-top:50px;
+  margin-right:350px;
+  margin-left: 90PX;
+  margin-bottom: 120px;
+  
+}
+@media only screen and (max-width: 567px){
+  .showPage hero{
+    padding-top: 150px;
+  }
+  .showPage navbar h1{
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+
+  .showPage{
+    text-align: center;
+    margin: auto;
+  }
+
+  .showPage a {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 35%;
+  }
+  .showPage p {
+    font-size: 1rem;
+  }
+  .showPage #rules{
+    /* padding-right: 90px; */
+    padding-left: 220px;
+    padding-top: 165px;
+    width: 480px;
+    font-size: 10px;
+    /* margin-right: 0px; */
+  }
+}
